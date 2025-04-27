@@ -1,0 +1,542 @@
+% hfut.bib
+% Encoding: UTF8
+%
+@online{opencascad,
+	title = {Open {CASCADE} {Technology} {\textbar} {Collaborative} development portal},
+	url = {https://dev.opencascade.org/},
+	urldate = {2024-04-25},
+}
+
+
+@online{nsight,
+	title = {{NVIDIA} {Nsight} {Compute}},
+	url = {https://developer.nvidia.com/nsight-compute},
+	abstract = {An interactive profiler for CUDA and NVIDIA OptiX.},
+	language = {en-US},
+	urldate = {2024-05-20},
+	journal = {NVIDIA Developer},
+	file = {Snapshot:C\:\\Users\\wujin\\Zotero\\storage\\ZC4IJ95V\\nsight-compute.html:text/html},
+}
+@ARTICLE{tvcg18,
+	author={Schollmeyer, Andre and Froehlich, Bernd},
+	journal={IEEE Transactions on Visualization and Computer Graphics}, 
+	title={Efficient and Anti-Aliased Trimming for Rendering Large NURBS Models}, 
+	year={2019},
+	volume={25},
+	number={3},
+	pages={1489-1498},
+	keywords={Solid modeling;Rendering (computer graphics);Splines (mathematics);Surface topography;Surface reconstruction;Computational modeling;Hardware;Trimming;NURBS;anti-aliasing;adaptive tessellation},
+	doi={10.1109/TVCG.2018.2814987}}
+
+@inproceedings{hpg11,
+	author = {Laine, Samuli and Karras, Tero},
+	title = {High-performance software rasterization on GPUs},
+	year = {2011},
+	isbn = {9781450308960},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/2018323.2018337},
+	doi = {10.1145/2018323.2018337},
+	abstract = {In this paper, we implement an efficient, completely software-based graphics pipeline on a GPU. Unlike previous approaches, we obey ordering constraints imposed by current graphics APIs, guarantee hole-free rasterization, and support multisample antialiasing. Our goal is to examine the performance implications of not exploiting the fixed-function graphics pipeline, and to discern which additional hardware support would benefit software-based graphics the most.We present significant improvements over previous work in terms of scalability, performance, and capabilities. Our pipeline is malleable and easy to extend, and we demonstrate that in a wide variety of test cases its performance is within a factor of 2--8x compared to the hardware graphics pipeline on a top of the line GPU.Our implementation is open sourced and available at http://code.google.com/p/cudaraster/},
+	booktitle = {Proceedings of the ACM SIGGRAPH Symposium on High Performance Graphics},
+	pages = {79–88},
+	numpages = {10},
+	location = {Vancouver, British Columbia, Canada},
+	series = {HPG '11}
+
+}
+
+@article{sig18,
+	author = {Kenzel, Michael and Kerbl, Bernhard and Schmalstieg, Dieter and Steinberger, Markus},
+	title = {A high-performance software graphics pipeline architecture for the GPU},
+	year = {2018},
+	issue_date = {August 2018},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {37},
+	number = {4},
+	issn = {0730-0301},
+	url = {https://doi.org/10.1145/3197517.3201374},
+	doi = {10.1145/3197517.3201374},
+	abstract = {In this paper, we present a real-time graphics pipeline implemented entirely in software on a modern GPU. As opposed to previous work, our approach features a fully-concurrent, multi-stage, streaming design with dynamic load balancing, capable of operating efficiently within bounded memory. We address issues such as primitive order, vertex reuse, and screen-space derivatives of dependent variables, which are essential to real-world applications, but have largely been ignored by comparable work in the past. The power of a software approach lies in the ability to tailor the graphics pipeline to any given application. In exploration of this potential, we design and implement four novel pipeline modifications. Evaluation of the performance of our approach on more than 100 real-world scenes collected from video games shows rendering speeds within one order of magnitude of the hardware graphics pipeline as well as significant improvements over previous work, not only in terms of capabilities and performance, but also robustness.},
+	journal = {ACM Trans. Graph.},
+	month = {jul},
+	articleno = {140},
+	numpages = {15},
+	keywords = {software rendering, rasterization, graphics pipeline, GPU, CUDA}
+	
+}
+
+@inproceedings{freepipe2010,
+	author = {Liu, Fang and Huang, Meng-Cheng and Liu, Xue-Hui and Wu, En-Hua},
+	title = {FreePipe: a programmable parallel rendering architecture for efficient multi-fragment effects},
+	year = {2010},
+	isbn = {9781605589398},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/1730804.1730817},
+	doi = {10.1145/1730804.1730817},
+	abstract = {In the past decade, modern GPUs have provided increasing programmability with vertex, geometry and fragment shaders. However, many classical problems have not been efficiently solved using the current graphics pipeline where some stages are still fixed functions on chip. In particular, multi-fragment effects, especially order-independent transparency, require programmability of the blending stage, that makes it difficult to be solved in a single geometry pass. In this paper we present FreePipe, a system for programmable parallel rendering that can run entirely on current graphics hardware and has performance comparable with the traditional graphics pipeline. Within this framework, two schemes for the efficient rendering of multi-fragment effects in a single geometry pass have been developed by exploiting CUDA atomic operations. Both schemes have achieved significant speedups compared to the state-of-the-art methods that are based on traditional graphics pipelines.},
+	booktitle = {Proceedings of the 2010 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games},
+	pages = {75–82},
+	numpages = {8},
+	keywords = {rasterizer, programmable graphics pipeline, order-independent transparency, multi-fragment effects, graphics hardware, depth peeling, compute unified device architecture (CUDA), atomic operation},
+	location = {Washington, D.C.},
+	series = {I3D '10}
+}
+
+@article{larrabee2008,
+	author = {Seiler, Larry and Carmean, Doug and Sprangle, Eric and Forsyth, Tom and Abrash, Michael and Dubey, Pradeep and Junkins, Stephen and Lake, Adam and Sugerman, Jeremy and Cavin, Robert and Espasa, Roger and Grochowski, Ed and Juan, Toni and Hanrahan, Pat},
+	title = {Larrabee: a many-core x86 architecture for visual computing},
+	year = {2008},
+	issue_date = {August 2008},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {27},
+	number = {3},
+	issn = {0730-0301},
+	url = {https://doi.org/10.1145/1360612.1360617},
+	doi = {10.1145/1360612.1360617},
+	abstract = {This paper presents a many-core visual computing architecture code named Larrabee, a new software rendering pipeline, a manycore programming model, and performance analysis for several applications. Larrabee uses multiple in-order x86 CPU cores that are augmented by a wide vector processor unit, as well as some fixed function logic blocks. This provides dramatically higher performance per watt and per unit of area than out-of-order CPUs on highly parallel workloads. It also greatly increases the flexibility and programmability of the architecture as compared to standard GPUs. A coherent on-die 2nd level cache allows efficient inter-processor communication and high-bandwidth local data access by CPU cores. Task scheduling is performed entirely with software in Larrabee, rather than in fixed function logic. The customizable software graphics rendering pipeline for this architecture uses binning in order to reduce required memory bandwidth, minimize lock contention, and increase opportunities for parallelism relative to standard GPUs. The Larrabee native programming model supports a variety of highly parallel applications that use irregular data structures. Performance analysis on those applications demonstrates Larrabee's potential for a broad range of parallel computation.},
+	journal = {ACM Trans. Graph.},
+	month = {aug},
+	pages = {1–15},
+	numpages = {15},
+	keywords = {GPGPU, SIMD, graphics architecture, many-core computing, parallel processing, realtime graphics, software rendering, throughput computing, visual computing}
+}
+
+@online{cuda-guide,
+	title = {{CUDA} {C}++ {Programming} {Guide}},
+	url = {https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf},
+	author = {{NVIDIA}},
+	
+}
+
+
+
+
+@online{nvidia-ptx,
+	title = {Parallel {Thread} {Execution} {ISA}},
+	url = {https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html},
+	language = {en},
+	author = {{NVIDIA}},
+	
+}
+
+@inproceedings{pomegranate2000,
+	title = {Pomegranate: a fully scalable graphics architecture},
+	isbn = {978-1-58113-208-3},
+	shorttitle = {Pomegranate},
+	url = {http://portal.acm.org/citation.cfm?doid=344779.344981},
+	doi = {10.1145/344779.344981},
+	language = {en},
+	urldate = {2024-02-13},
+	booktitle = {Proceedings of the 27th annual conference on {Computer} graphics and interactive techniques  - {SIGGRAPH} '00},
+	publisher = {ACM Press},
+	author = {Eldridge, Matthew and Igehy, Homan and Hanrahan, Pat},
+	year = {2000},
+	pages = {443--454},
+	
+}
+@article{molnarsorting1994,
+	title = {A sorting classification of parallel rendering},
+	volume = {14},
+	issn = {0272-1716},
+	url = {http://ieeexplore.ieee.org/document/291528/},
+	doi = {10.1109/38.291528},
+	language = {en},
+	number = {4},
+	urldate = {2024-02-23},
+	journal = {IEEE Computer Graphics and Applications},
+	author = {Molnar, S. and Cox, M. and Ellsworth, D. and Fuchs, H.},
+	month = jul,
+	year = {1994},
+	pages = {23--32},
+	
+}
+@inproceedings{loop2009,
+	title={Real-time Patch-Based Sort-Middle Rendering on Massively Parallel Hardware},
+	author={Charles T. Loop and Christian Eisenacher},
+	year={2009},
+	url={https://api.semanticscholar.org/CorpusID:17655853}
+}
+}
+@article{piko2015,
+	title = {Piko: a framework for authoring programmable graphics pipelines},
+	volume = {34},
+	issn = {0730-0301},
+	shorttitle = {Piko},
+	url = {https://dl.acm.org/doi/10.1145/2766973},
+	doi = {10.1145/2766973},
+	abstract = {We present Piko, a framework for designing, optimizing, and retargeting implementations of graphics pipelines on multiple architectures. Piko programmers express a graphics pipeline by organizing the computation within each stage into spatial bins and specifying a scheduling preference for these bins. Our compiler, Pikoc, compiles this input into an optimized implementation targeted to a massively-parallel GPU or a multicore CPU. Piko manages work granularity in a programmable and flexible manner, allowing programmers to build load-balanced parallel pipeline implementations, to exploit spatial and producer-consumer locality in a pipeline implementation, and to explore tradeoffs between these considerations. We demonstrate that Piko can implement a wide range of pipelines, including rasterization, Reyes, ray tracing, rasterization/ray tracing hybrid, and deferred rendering. Piko allows us to implement efficient graphics pipelines with relative ease and to quickly explore design alternatives by modifying the spatial binning configurations and scheduling preferences for individual stages, all while delivering real-time performance that is within a factor six of state-of-the-art rendering systems.},
+	number = {4},
+	urldate = {2024-02-18},
+	journal = {ACM Transactions on Graphics},
+	author = {Patney, Anjul and Tzeng, Stanley and Seitz, Kerry A. and Owens, John D.},
+	month = jul,
+	year = {2015},
+	keywords = {graphics pipelines, parallel computing},
+	pages = {147:1--147:13},
+}
+@inproceedings{gpubenchmarking2014,
+	address = {Berlin, Heidelberg},
+	title = {Benchmarking the {Memory} {Hierarchy} of {Modern} {GPUs}},
+	isbn = {978-3-662-44917-2},
+	abstract = {Memory access efficiency is a key factor for fully exploiting the computational power of Graphics Processing Units (GPUs). However, many details of the GPU memory hierarchy are not released by the vendors. We propose a novel fine-grained benchmarking approach and apply it on two popular GPUs, namely Fermi and Kepler, to expose the previously unknown characteristics of their memory hierarchies. Specifically, we investigate the structures of different cache systems, such as data cache, texture cache, and the translation lookaside buffer (TLB). We also investigate the impact of bank conflict on shared memory access latency. Our benchmarking results offer a better understanding on the mysterious GPU memory hierarchy, which can help in the software optimization and the modelling of GPU architectures. Our source code and experimental results are publicly available.},
+	booktitle = {Network and {Parallel} {Computing}},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Mei, Xinxin and Zhao, Kaiyong and Liu, Chengjian and Chu, Xiaowen},
+	editor = {Hsu, Ching-Hsien and Shi, Xuanhua and Salapura, Valentina},
+	year = {2014},
+	pages = {144--156},
+}
+@online{nvidiafermi,
+	title = {{NVIDIA} {Fermi} {Compute} {Architecture} {Whitepaper}},
+	url = {https://www.nvidia.com/content/PDF/fermi_white_papers/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf},
+	author = {{NVIDIA}},
+	
+}
+
+@online{nvidiakepler,
+	title = {{NVIDIA} {Kepler} {GK110} {GK210} {Architecture} {Whitepaper}},
+	url = {https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-product-literature/NVIDIA-Kepler-GK110-GK210-Architecture-Whitepaper.pdf},
+	author = {{NVIDIA}},
+}
+
+@online{maxwell,
+	title = {Maxwell: {The} {Most} {Advanced} {CUDA} {GPU} {Ever} {Made}},
+	shorttitle = {Maxwell},
+	url = {https://developer.nvidia.com/blog/maxwell-most-advanced-cuda-gpu-ever-made/},
+	abstract = {Today NVIDIA introduced the new GM204 GPU, based on the Maxwell architecture. GM204 is the first GPU based on second-generation Maxwell, the full realization of the Maxwell architecture.},
+	language = {en-US},
+	urldate = {2024-02-22},
+	journal = {NVIDIA Technical Blog},
+	author = {{Harris M.}},
+	month = sep,
+	year = {2014},
+	
+}
+@online{nvidiaPascal,
+	title = {Inside {Pascal}: {NVIDIA}’s {Newest} {Computing} {Platform}},
+	shorttitle = {Inside {Pascal}},
+	url = {https://developer.nvidia.com/blog/inside-pascal/},
+	abstract = {At the 2016 GPU Technology Conference in San Jose, NVIDIA CEO Jen-Hsun Huang announced the new NVIDIA Tesla P100, the most advanced accelerator ever built. Based on the new NVIDIA Pascal GP100 GPU and…},
+	language = {en-US},
+	urldate = {2024-04-30},
+	journal = {NVIDIA Technical Blog},
+	author = {{Harris M.}},
+	month = apr,
+	year = {2016},
+}
+@online{nvidiavolta,
+	title = {{NVIDIA} {Volta} {Architecture} {Whitepaper}},
+	url = {https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf},
+	author = {{NVIDIA}},
+	
+}
+@online{nvidiaturing,
+	title = {{NVIDIA} {Turing} {Architecture} {Whitepaper}},
+	url = {https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf},
+	author = {{NVIDIA}},
+	
+}
+@online{nvidiaAmpere,
+	title = {{NVIDIA} {Ampere} {Architecture} {In}-{Depth}},
+	url = {https://developer.nvidia.com/blog/nvidia-ampere-architecture-in-depth/},
+	abstract = {Today, during the 2020 NVIDIA GTC keynote address, NVIDIA founder and CEO Jensen Huang introduced the new NVIDIA A100 GPU based on the new NVIDIA Ampere GPU architecture. This post gives you a look…},
+	language = {en-US},
+	urldate = {2024-04-30},
+	journal = {NVIDIA Technical Blog},
+	author = {{Krashinsky R.} and {Giroux O.} and {Jones S.} and {Stam N.} and {Ramaswamy S.}},
+	month = may,
+	year = {2020},
+}
+@online{nvidia-ada,
+	title = {{NVIDIA} {Ada} {GPU} {Architecture}},
+	url = {https://images.nvidia.cn/aem-dam/Solutions/geforce/ada/nvidia-ada-gpu-architecture.pdf}
+	language = {en},
+	author = {{NVIDIA}},
+	
+}
+@online{nvidiHopper,
+	title = {{NVIDIA} {Hopper} {Architecture} {In}-{Depth}},
+	url = {https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/},
+	abstract = {Everything you want to know about the new H100 GPU.},
+	language = {en-US},
+	urldate = {2024-04-30},
+	journal = {NVIDIA Technical Blog},
+	author = {{Andersch M.} and {Palmer G.} and {Krashinsky R.} and {Nick S.} and {Mehta V.} and {Brito G.} and {Ramaswamy S.}},
+	month = mar,
+	year = {2022},
+}
+
+
+
+@online{vulkan,
+	title = {Vulkan® 1.2.283 - {A} {Specification} (with all ratified extensions) - 20.2. {Primitive} {Order}},
+	url = {https://registry.khronos.org/vulkan/specs/1.2-khr-extensions/html/chap20.html#drawing-primitive-order},
+	urldate = {2024-04-20},
+	author = {{The Khronos® Vulkan Working Group}},
+}
+
+@online{dynamicsharedmemory,
+	title = {Using {Shared} {Memory} in {CUDA} {C}/{C}++},
+	url = {https://developer.nvidia.com/blog/using-shared-memory-cuda-cc/},
+	abstract = {In the previous post, I looked at how global memory accesses by a group of threads can be coalesced into a single transaction, and how alignment and stride affect coalescing for various generations of…},
+	language = {en-US},
+	urldate = {2024-04-22},
+	journal = {NVIDIA Technical Blog},
+	author = {{Harris M.}},
+	month = jan,
+	year = {2013},
+}
+
+@misc{patcs448a,
+	title = {{CS448A}: {Real}-{Time} {Graphics} {Architectures} - {Parallelism} and {Communication}},
+	url = {http://www.graphics.stanford.edu/courses/cs448a-01-fall/lectures/lecture9/},
+	urldate = {2024-04-22},
+	author = {{Pat H.}},
+	
+}
+
+@article{nkgpu2018,
+	title = {{基于线程池的GPU任务并行计算模式研究}},
+	volume = {41},
+	number = {10},
+	journal = {计算机学报},
+	author = {{李涛} and {董前琨} and {张帅} and {孔令晏} and {康宏} and {杨愚鲁}},
+	month = jan,
+	year = {2018},
+	note = {Publisher: 南开大学 and 南开大学},
+	pages = {2175--2192},
+}
+@inproceedings{Wexler2005,
+	author = {Wexler, Daniel and Gritz, Larry and Enderton, Eric and Rice, Jonathan},
+	title = {GPU-accelerated high-quality hidden surface removal},
+	year = {2005},
+	isbn = {1595930868},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/1071866.1071868},
+	doi = {10.1145/1071866.1071868},
+	abstract = {High-quality off-line rendering requires many features not natively supported by current commodity graphics hardware: wide smooth filters, high sampling rates, order-independent transparency, spectral opacity, motion blur, depth of field. We present a GPU-based hidden-surface algorithm that implements all these features. The algorithm is Reyes-like but uses regular sampling and multiple passes. Transparency is implemented by depth peeling, made more efficient by opacity thresholding and a new method called z batches. We discuss performance and some design trade-offs. At high spatial sampling rates, our implementation is substantially faster than a CPU-only renderer for typical scenes.},
+	booktitle = {Proceedings of the ACM SIGGRAPH/EUROGRAPHICS Conference on Graphics Hardware},
+	pages = {7–14},
+	numpages = {8},
+	location = {Los Angeles, California},
+	series = {HWWS '05}
+}
+@online{nvidiaptxass,
+	title = {Using Inline PTX Assembly in CUDA — Inline PTX Assembly in CUDA 12.4 documentation},
+	url = {https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html},
+	author = {NVIDIA},
+}
+
+@online{nvidiaptx,
+	title = {Introduction — PTX ISA 8.4 documentation},
+	url = {https://docs.nvidia.com/cuda/parallel-thread-execution/index.html},
+	author = {{NVIDIA}},
+}
+
+@book{fundamentalsofCG2021,
+	title = {Fundamentals of {Computer} {Graphics}},
+	abstract = {Drawing on an impressive roster of experts in the field, Fundamentals of Computer Graphics, Fifth Edition offers an ideal resource for computer course curricula as well as a user-friendly personal or professional reference; Focusing on geometric intuition, this book gives the necessary information for understanding how images get onto the screen by using the complementary approaches of ray tracing and rasterization.It covers topics common to an introductory course, such as sampling theory, texture mapping, spatial data structure, and splines.It also includes a number of contributed chapters from authors known for their expertise and clear way of explaining concepts; HIGHLIGHTS; Major updates and improvements to numerous chapters, including shading, ray tracing, physics-based rendering, math, and sampling; Updated coverage of existing topics; The absorption and reworking of several chapters to create a more natural flow to the book; The fifth edition of Fundamentals of Computer Graphics continues to provide an outstanding and comprehensive introduction to basic computer graphic technology and theory.It retains an informal and intuitive style while improving precision, consistency, and completeness of material, allowing aspiring and experienced graphics programmers to better understand and apply foundational principles to the development of efficient code in creating film, game, or web designs},
+	publisher = {A K Peters/CRC Press},
+	author = {{Steve Marschner; Peter Shirley; Michael Ashikhmin; Michael Gleicher; Naty Hoffman; Garrett Johnson; Tamara Munzner; Erik Reinhard; William B.Thompson; Peter Willemsen; Brian Wyvill}},
+	year = {2021},
+}
+
+@online{cubblockradixsort,
+	title = {cub::BlockRadixSort — CUB 104.0 documentation},
+	url = {https://nvidia.github.io/cccl/cub/api/classcub\_1\_1BlockRadixSort.html},
+	author = {{NVIDIA}},
+}
+
+@online{usingwarp,
+	title = {Using {CUDA} {Warp}-{Level} {Primitives}},
+	url = {https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/},
+	abstract = {NVIDIA GPUs execute groups of threads known as warps in SIMT (Single Instruction, Multiple Thread) fashion. Many CUDA programs achieve high performance by taking advantage of warp execution.},
+	language = {en-US},
+	urldate = {2024-04-24},
+	journal = {NVIDIA Technical Blog},
+	author = {{Lin Y.} and {Grover V.}},
+	month = jan,
+	year = {2018},
+}
+@online{lifeoftris,
+	title = {Life of a triangle - NVIDIA's logical pipeline},
+	url = {https://developer.nvidia.com/content/life-triangle-nvidias-logical-pipeline},
+	language = {en-US},
+	urldate = {2024-04-25},
+	author = {{NVIDIA Developer}},
+}
+@inproceedings{persistentThreads,
+	author = {Aila, Timo and Laine, Samuli},
+	title = {Understanding the efficiency of ray traversal on GPUs},
+	year = {2009},
+	isbn = {9781605586038},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/1572769.1572792},
+	doi = {10.1145/1572769.1572792},
+	abstract = {We discuss the mapping of elementary ray tracing operations---acceleration structure traversal and primitive intersection---onto wide SIMD/SIMT machines. Our focus is on NVIDIA GPUs, but some of the observations should be valid for other wide machines as well. While several fast GPU tracing methods have been published, very little is actually understood about their performance. Nobody knows whether the methods are anywhere near the theoretically obtainable limits, and if not, what might be causing the discrepancy. We study this question by comparing the measurements against a simulator that tells the upper bound of performance for a given kernel. We observe that previously known methods are a factor of 1.5--2.5X off from theoretical optimum, and most of the gap is not explained by memory bandwidth, but rather by previously unidentified inefficiencies in hardware work distribution. We then propose a simple solution that significantly narrows the gap between simulation and measurement. This results in the fastest GPU ray tracer to date. We provide results for primary, ambient occlusion and diffuse interreflection rays.},
+	booktitle = {Proceedings of the Conference on High Performance Graphics 2009},
+	pages = {145–149},
+	numpages = {5},
+	keywords = {ray tracing, SIMT, SIMD},
+	location = {New Orleans, Louisiana},
+	series = {HPG '09}
+}
+
+
+@article{edgefunction,
+	title = {Fast spheres, shadows, textures, transparencies, and imgage enhancements in pixel-planes},
+	volume = {19},
+	issn = {0097-8930},
+	url = {https://doi.org/10.1145/325165.325205},
+	doi = {10.1145/325165.325205},
+	abstract = {Pixel-planes is a logic-enhanced memory system for raster graphics and imaging. Although each pixel-memory is enhanced with a one-bit ALU, the system's real power comes from a tree of one-bit adders that can evaluate linear expressions Ax+By+C for every pixel (x,y) simultaneously, as fast as the ALUs and the memory circuits can accept the results. We and others have begun to develop a variety of algorithms that exploit this fast linear expression evaluation capability. In this paper we report some of those results. Illustrated in this paper is a sample image from a small working prototype of the Pixel-planes hardware and a variety of images from simulations of a full-scale system. Timing estimates indicate that 30,000 smooth shaded triangles can be generated per second, or 21,000 smooth-shaded and shadowed triangles can be generated per second, or over 25,000 shaded spheres can be generated per second. Image-enhancement by adaptive histogram equalization can be performed within 4 seconds on a 512x512 image.},
+	number = {3},
+	journal = {SIGGRAPH Comput. Graph.},
+	author = {Fuchs, Henry and Goldfeather, Jack and Hultquist, Jeff P. and Spach, Susan and Austin, John D. and Brooks, Frederick P. and Eyles, John G. and Poulton, John},
+	month = jul,
+	year = {1985},
+	note = {Place: New York, NY, USA
+	Publisher: Association for Computing Machinery},
+	pages = {111--120},
+}
+
+@online{cuda,
+	title = {{CUDA} {Toolkit} - {Free} {Tools} and {Training}},
+	url = {https://developer.nvidia.com/cuda-toolkit},
+	abstract = {Get access to SDKs, trainings, and connect with developers.},
+	language = {en-US},
+	journal = {CUDA Toolkit},
+	author = {{NVIDIA Developer}},
+}
+
+@online{nanite,
+	title = {Nanite {Virtualized} {Geometry}},
+	url = {https://dev.epicgames.com/documentation/en-us/unreal-engine/nanite-virtualized-geometry-in-unreal-engine?application\_version=5.0},
+	abstract = {Nanite is Unreal Engine 5's virtualized geometry system which uses a new internal mesh format and rendering technology to render pixel scale detail and high object counts. It intelligently does work on only the detail that can be perceived and no more. Nanite's data format is also highly compressed, and supports fine-grained streaming with automatic level of detail.},
+	urldate = {2024-04-24},
+	author = {{Epic Developer Community}},
+}
+
+@inproceedings{nanitesig,
+	title = {A {Deep} {Dive} into {Nanite} {Virtualized} {Geometry}},
+booktitle = {{ACM} {SIGGRAPH}},
+author = {Karis, Brian and Stubbe, Rune and Wihlidal, Graham},
+year = {2021},
+}
+
+@online{taileffect,
+	title = {{CUDA} {Pro} {Tip}: {Minimize} the {Tail} {Effect}},
+	shorttitle = {{CUDA} {Pro} {Tip}},
+	url = {https://developer.nvidia.com/blog/cuda-pro-tip-minimize-the-tail-effect/},
+	abstract = {When I work on the optimization of CUDA kernels, I sometimes see a discrepancy between Achieved and Theoretical Occupancies. The Theoretical Occupancy is the ratio between the number of threads which…},
+	language = {en-US},
+	urldate = {2024-05-05},
+	journal = {NVIDIA Technical Blog},
+	author = {{Demouth J.}},
+	month = jun,
+	year = {2014},
+	file = {Snapshot:C\:\\Users\\wujin\\Zotero\\storage\\8CMZK8BW\\cuda-pro-tip-minimize-the-tail-effect.html:text/html},
+}
+@article{cad2023,
+	title = {{三维CAD技术研究进展及其发展趋势综述}},
+	volume = {59},
+	issn = {0577-6686},
+	number = {23},
+	journal = {机械工程学报},
+	author = {{程锦} and {叶虎强} and {谭建荣} and {刘振宇} and {楼亦斌} and {王荣}},
+	year = {2023},
+	pages = {158--185},
+}
+@article{multicoremultithreadsummary,
+	title = {多核多线程技术综述},
+	volume = {33},
+	number = {z1},
+	journal = {计算机应用},
+	author = {{眭俊华} and {刘慧娜} and {王建鑫} and {秦庆旺}},
+	month = jan,
+	year = {2013},
+	note = {Publisher: 中国人民银行印制科学技术研究所 and 中国人民银行印制科学技术研究所 and 中国人民银行印制科学技术研究所 and 中国人民银行印制科学技术研究所},
+	
+	pages = {239--242,261},
+}
+
+@phdthesis{linuxmodbus2012,
+	type = {硕士论文},
+	title = {{Linux系统下Modbus主协议栈设计与实现}},
+	school = {安徽大学},
+	author = {{李振江}},
+	year = {2012},
+}
+
+@article {ETER2023,
+	author = {Xiong, Ruicheng and Lu, Yang and Chen, Cong and Zhu, Jiaming and Zeng, Yajun and Liu, Ligang},
+	title = {ETER: Elastic Tessellation for Real-Time Pixel-Accurate Rendering of Large-Scale NURBS Models},
+	year = {2023},
+	issue_date = {August 2023},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {42},
+	number = {4},
+	issn = {0730-0301},
+	url = {https://doi.org/10.1145/3592419},
+	doi = {10.1145/3592419},
+	abstract = {We present ETER, an elastic tessellation framework for rendering large-scale NURBS models with pixel-accurate and crack-free quality at real-time frame rates. We propose a highly parallel adaptive tessellation algorithm to achieve pixel accuracy, measured by the screen space error between the exact surface and its triangulation. To resolve a bottleneck in NURBS rendering, we present a novel evaluation method based on uniform sampling grids and accelerated by GPU Tensor Cores. Compared to evaluation based on hardware tessellation, our method has achieved a significant speedup of 2.9 to 16.2 times depending on the degrees of the patches. We develop an efficient crack-filling algorithm based on conservative rasterization and visibility buffer to fill the tessellation-induced cracks while greatly reducing the jagged effect introduced by conservative rasterization. We integrate all our novel algorithms, implemented in CUDA, into a GPU NURBS rendering pipeline based on Mesh Shaders and hybrid software/hardware rasterization. Our performance data on a commodity GPU show that the rendering pipeline based on ETER is capable of rendering up to 3.7 million patches (0.25 billion tessellated triangles) in real-time (30FPS). With its advantages in performance, scalability, and visual quality in rendering large-scale NURBS models, a real-time tessellation solution based on ETER can be a powerful alternative or even a potential replacement for the existing pre-tessellation solution in CAD systems.},
+	journal = {ACM Trans. Graph.},
+	month = {jul},
+	articleno = {133},
+	numpages = {13},
+	keywords = {NURBS, adaptive tessellation, GPU-based algorithms, real-time rendering}
+}
+@inproceedings{static-load-balancing,
+	author = {Kerbl, Bernhard and Kenzel, Michael and Schmalstieg, Dieter and Steinberger, Markus},
+	title = {Effective static bin patterns for sort-middle rendering},
+	year = {2017},
+	isbn = {9781450351010},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3105762.3105777},
+	doi = {10.1145/3105762.3105777},
+	abstract = {To effectively utilize an ever increasing number of processors during parallel rendering, hardware and software designers rely on sophisticated load balancing strategies. While dynamic load balancing is a powerful solution, it requires complex work distribution and synchronization mechanisms. Graphics hardware manufacturers have opted to employ static load balancing strategies instead. Specifically, triangle data is distributed to processors based on its overlap with screenspace tiles arranged in a fixed pattern. While the current strategy of using simple patterns for a small number of fast rasterizers achieves formidable performance, it is questionable how this approach will scale as the number of processors increases further. To address this issue, we analyze real-world rendering workloads, derive requirements for effective patterns, and present ten different pattern design strategies based on these requirements. In addition to a theoretical evaluation of these design strategies, we compare the performance of select patterns in a parallel sort-middle software rendering pipeline on an extensive set of triangle data captured from eight recent video games. As a result, we are able to identify a set of patterns that scale well and exhibit significantly improved performance over na\"{\i}ve approaches.},
+	booktitle = {Proceedings of High Performance Graphics},
+	articleno = {14},
+	numpages = {10},
+	keywords = {static load balancing, sort-middle, pattern, parallel rendering, GPU},
+	location = {Los Angeles, California},
+	series = {HPG '17}
+}
+@article{phongshading,
+	author = {Phong, Bui Tuong},
+	title = {Illumination for computer generated pictures},
+	year = {1975},
+	issue_date = {June 1975},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {18},
+	number = {6},
+	issn = {0001-0782},
+	url = {https://doi.org/10.1145/360825.360839},
+	doi = {10.1145/360825.360839},
+	abstract = {The quality of computer generated images of three-dimensional scenes depends on the shading technique used to paint the objects on the cathode-ray tube screen. The shading algorithm itself depends in part on the method for modeling the object, which also determines the hidden surface algorithm. The various methods of object modeling, shading, and hidden surface removal are thus strongly interconnected. Several shading techniques corresponding to different methods of object modeling and the related hidden surface algorithms are presented here. Human visual perception and the fundamental laws of optics are considered in the development of a shading rule that provides better quality and increased realism in generated images.},
+	journal = {Commun. ACM},
+	month = {jun},
+	pages = {311–317},
+	numpages = {7},
+	keywords = {computer graphics, graphic display, hidden surface removal, shading}
+}
+
+@ARTICLE{Gouraudshading,
+	author={Gouraud, H.},
+	journal={IEEE Transactions on Computers}, 
+	title={Continuous Shading of Curved Surfaces}, 
+	year={1971},
+	volume={C-20},
+	number={6},
+	pages={623-629},
+	keywords={Coons patches, curved surfaces, halftone, hidden-line removal, shading.},
+	doi={10.1109/T-C.1971.223313}}
